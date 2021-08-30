@@ -1,0 +1,85 @@
+<aside class="main-sidebar sidebar-dark-primary elevation-4">
+  <!-- Brand Logo -->
+  <a href="#" class="brand-link">
+    <img
+      src="assets/img/Logo.png"
+      alt="TMG Logo"
+    />
+    <span class="brand-text font-weight-light">RETS</span>
+  </a>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <!-- Sidebar Menu -->
+    <nav class="mt-2">
+      <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+        <li class="nav-item">
+          <a href="#" class="nav-link" onclick="document.getElementById('stakeholders').style.display='block'">
+            <div class="item-fullbox">
+              <p>Các bên liên quan</p>
+            </div>
+          </a>
+          <ul class="nav nav-treeview" id="stakeholders" style="display:none">
+            <li class="nav-item">
+              <a id="a-customer" href="#" class="nav-link" >
+                <div class="item-fullbox" onclick="document.getElementById('a-customer').style.backgroundColor = '#FCB117';
+                document.getElementById('a-broker').style.backgroundColor = 'transparent';
+                document.getElementById('a-investor').style.backgroundColor = 'transparent'">
+                  <p>Khách hàng</p>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item active">
+              <a id="a-broker" href="#" class="nav-link">
+                <div class="item-fullbox" onclick="document.getElementById('a-broker').style.backgroundColor = '#FCB117';
+                document.getElementById('a-investor').style.backgroundColor = 'transparent';
+                document.getElementById('a-customer').style.backgroundColor = 'transparent'">
+                  <i class="far fa-handshake"></i>
+                  <p>Môi giới</p>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a id="a-investor" href="#" class="nav-link">
+                <div class="item-fullbox" onclick="document.getElementById('a-investor').style.backgroundColor = '#FCB117';
+                document.getElementById('a-broker').style.backgroundColor = 'transparent';
+                document.getElementById('a-customer').style.backgroundColor = 'transparent';">
+                  <i class="far fa-handshake"></i>
+                  <p>Chủ đầu tư</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link">
+            <i class="nav-icon fas fa-th"></i>
+            <p>Sản phẩm</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link">
+            <i class="nav-icon fas fa-th"></i>
+            <p>Giao dịch</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="l" class="nav-link">
+            <i class="nav-icon fas fa-th"></i>
+            <p>Hợp đồng</p>
+          </a>
+        </li>
+        <hr>
+        <li class="nav-header">Settings</li>
+        <li class="nav-item">
+          <a href="" class="nav-link">
+            <i class="nav-icon far fa-calendar-alt"></i>
+            <p>Người dùng hệ thống</p>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- /.sidebar-menu -->
+  </div>
+  <!-- /.sidebar -->
+</aside>

@@ -1,0 +1,46 @@
+#modal-broker {
+  display:none;
+}
+
+.modal-broker-body button {
+  background-color: #FCB117;
+}
+
+.modal-broker-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid #e9ecef;
+  border-top-left-radius: calc(.3rem - 1px);
+  border-top-right-radius: calc(.3rem - 1px);
+}
+
+.modal-broker-header button {
+  border: none;
+  background: none;
+}
+
+.modal-broker-body{
+  position: relative;
+  flex: 1 1 auto;
+  padding: 1rem;
+}
+
+.modal-broker-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0,0,0,.2);
+  border-radius: .3rem;
+  box-shadow: 0 .25rem .5rem rgba(0,0,0,.5);
+  outline: 0;
+}
+
+.modal-broker-body .form-group {
+  padding-bottom: 10px;
+}
