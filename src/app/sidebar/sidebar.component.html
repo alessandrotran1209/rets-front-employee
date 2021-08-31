@@ -1,51 +1,47 @@
-<aside class="main-sidebar sidebar-dark-primary elevation-4">
   <!-- Brand Logo -->
-  <a href="#" class="brand-link">
+  <a class="brand-link">
     <img
       src="assets/img/Logo.png"
       alt="TMG Logo"
     />
-    <span class="brand-text font-weight-light">RETS</span>
   </a>
+    <span class="brand-text font-weight-light">RETS</span>
+
 
   <!-- Sidebar -->
-  <div class="sidebar">
+  <div class="sidebar" id="sidebar">
     <!-- Sidebar Menu -->
     <nav class="mt-2">
       <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-        <li class="nav-item">
-          <a href="#" class="nav-link" onclick="document.getElementById('stakeholders').style.display='block'">
+        <li class="nav-item" id="stakeholder">
+          <a class="nav-link" routerLink="/stakeholder" onclick="document.getElementById('stakeholders').style.display='block'">
             <div class="item-fullbox">
-              <p>Các bên liên quan</p>
+              <i class="nav-icon fas fa-th d-inline"></i>
+              <p class="d-inline">Các bên liên quan</p>
             </div>
           </a>
           <ul class="nav nav-treeview" id="stakeholders" style="display:none">
             <li class="nav-item">
-              <a id="a-customer" href="#" class="nav-link" >
-                <div class="item-fullbox" onclick="document.getElementById('a-customer').style.backgroundColor = '#FCB117';
-                document.getElementById('a-broker').style.backgroundColor = 'transparent';
-                document.getElementById('a-investor').style.backgroundColor = 'transparent'">
-                  <p>Khách hàng</p>
-                </div>
-              </a>
-            </li>
-            <li class="nav-item active">
-              <a id="a-broker" href="#" class="nav-link">
-                <div class="item-fullbox" onclick="document.getElementById('a-broker').style.backgroundColor = '#FCB117';
-                document.getElementById('a-investor').style.backgroundColor = 'transparent';
-                document.getElementById('a-customer').style.backgroundColor = 'transparent'">
-                  <i class="far fa-handshake"></i>
-                  <p>Môi giới</p>
+              <a id="a-customer" routerLink="/customer" routerLinkActive="active" class="nav-link" >
+                <div class="item-fullbox d-flex justify-content-center">
+                  <i class="far fa-user fa-lg d-inline"></i>
+                  <p class="d-inline">Khách hàng</p>
                 </div>
               </a>
             </li>
             <li class="nav-item">
-              <a id="a-investor" href="#" class="nav-link">
-                <div class="item-fullbox" onclick="document.getElementById('a-investor').style.backgroundColor = '#FCB117';
-                document.getElementById('a-broker').style.backgroundColor = 'transparent';
-                document.getElementById('a-customer').style.backgroundColor = 'transparent';">
-                  <i class="far fa-handshake"></i>
-                  <p>Chủ đầu tư</p>
+              <a id="a-broker" routerLink="/broker" routerLinkActive="active" class="nav-link">
+                <div class="item-fullbox d-flex justify-content-center">
+                  <i class="far fa-handshake fa-lg d-inline"></i>
+                  <p class="d-inline">Môi giới</p>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a id="a-investor" routerLink="/investor" routerLinkActive="active" class="nav-link">
+                <div class="item-fullbox d-flex justify-content-center">
+                  <i class="fas fa-university fa-lg d-inline"></i>
+                  <p class="d-inline">Chủ đầu tư</p>
                 </div>
               </a>
             </li>
@@ -53,33 +49,31 @@
         </li>
         <li class="nav-item">
           <a href="" class="nav-link">
-            <i class="nav-icon fas fa-th"></i>
-            <p>Sản phẩm</p>
+            <i class="fas fa-home fa-lg d-inline"></i>
+            <p class="d-inline">Sản phẩm</p>
           </a>
         </li>
         <li class="nav-item">
           <a href="" class="nav-link">
-            <i class="nav-icon fas fa-th"></i>
-            <p>Giao dịch</p>
+            <i class="fas fa-clipboard-list fa-lg d-inline"></i>
+            <p class="d-inline">Giao dịch</p>
           </a>
         </li>
         <li class="nav-item">
           <a href="l" class="nav-link">
-            <i class="nav-icon fas fa-th"></i>
-            <p>Hợp đồng</p>
+            <i class="fas fa-user-friends fa-lg"></i>
+            <p class="d-inline">Hợp đồng</p>
           </a>
         </li>
         <hr>
         <li class="nav-header">Settings</li>
         <li class="nav-item">
           <a href="" class="nav-link">
-            <i class="nav-icon far fa-calendar-alt"></i>
-            <p>Người dùng hệ thống</p>
+            <i class="fas fa-cog fa-lg d-inline"></i>
+            <p class="d-inline">Người dùng hệ thống</p>
           </a>
         </li>
       </ul>
     </nav>
     <!-- /.sidebar-menu -->
   </div>
-  <!-- /.sidebar -->
-</aside>

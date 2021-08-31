@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { StakeholderComponent } from './stakeholder/stakeholder.component';
+import { CustomerComponent } from './stakeholder/customer/customer.component';
+
 
 const routes: Routes = [
-  { path: '/stakeholder', component: StakeholderComponent }
+  { path: 'customer',  component: CustomerComponent}
 ];
 
 @NgModule({

@@ -9,10 +9,11 @@
 #right {
   padding-left: 5%;
   padding-right: 5%;
-  width: 100%;
+  width: 87%;
 }
 
 #left {
   display: block;
   padding-left: 10px;
+  width: 13%;
 }

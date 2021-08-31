@@ -5,14 +5,13 @@ import { AppComponent } from './app.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { HeadbarComponent } from './headbar/headbar.component';
 import { AppRoutingModule } from './app-routing.module';
-import { StakeholderComponent } from './stakeholder/stakeholder.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     SidebarComponent,
-    HeadbarComponent,
-    StakeholderComponent
+    HeadbarComponent
   ],
   imports: [
     BrowserModule,

@@ -1,1 +1,608 @@
-<p>customer works!</p>
+<div id="search">
+  <div><h3>TÌM KIẾM</h3></div>
+  <div class="row">
+    <div class="col">
+      <div class="title">Tên khách hàng</div>
+      <div class="input-group input-group-sm">
+        <input
+          id="search-name"
+          class="form-control form-control-lg"
+          type="search"
+          placeholder="Điền tên khách hàng"
+          aria-label="Search"
+        />
+        <div class="input-group-append">
+          <div class="input-group-text bg-transparent">
+            <i class="fa fa-search"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="title">CMND/CCCD</div>
+      <div class="input-group input-group-sm">
+        <input
+          id="search-card"
+          class="form-control form-control-lg border-right-0 border"
+          type="search"
+          placeholder="Điền CMND/CCCD"
+          aria-label="Search"
+        />
+        <div class="input-group-append">
+          <div class="input-group-text bg-transparent">
+            <i class="fa fa-search"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="title">Số điện thoại</div>
+      <div class="input-group input-group-sm">
+        <input
+          id="search-number"
+          class="form-control form-control-lg"
+          type="search"
+          placeholder="Điền SĐT"
+          aria-label="Search"
+        />
+        <div class="input-group-append">
+          <div class="input-group-text bg-transparent">
+            <i class="fa fa-search"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="title">Username</div>
+      <div class="input-group input-group-sm">
+        <input
+          id="search-username"
+          class="form-control form-control-lg"
+          type="search"
+          placeholder="Điền username"
+          aria-label="Search"
+        />
+        <div class="input-group-append">
+          <div class="input-group-text bg-transparent">
+            <i class="fa fa-search"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <button
+        type="submit"
+        class="btn btn-default float-end"
+        style="background-color: #004aae; color: #ffffff; text-align: center"
+      >
+        Tìm kiếm
+      </button>
+    </div>
+    <div class="col">
+      <button
+        id="btn-clr"
+        type="submit"
+        class="btn btn-default float-end"
+        style="background-color: #d2d2d2; text-align: center"
+      >
+        Clear
+      </button>
+    </div>
+  </div>
+</div>
+
+<hr class="my-4" />
+
+<div class="table-data-header">
+  <div class="row">
+    <div class="col">
+      <h3>DANH SÁCH KHÁCH HÀNG</h3>
+    </div>
+    <div class="col">
+      <button
+        type="submit"
+        class="btn btn-default float-end"
+        onclick="document.getElementById('modal-info').style.display='block'"
+      >
+        Thêm mới
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="table-data" id="tb">
+  <div class="content">
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th class="text-center">STT</th>
+          <th class="text-center">Họ và tên</th>
+          <th class="text-center">CMND/CCCD</th>
+          <th class="text-center">Email</th>
+          <th class="text-center">Số điện thoại</th>
+          <th class="text-center">Username</th>
+          <th class="text-center">Trạng thái</th>
+          <th class="text-center">Thao tác</th>
+        </tr>
+      </thead>
+      <!-- <tbody>
+          <tr class="" *ngFor="let person of pipol">
+            <td>{{ }}</td>
+            <td>{{ }}</td>
+            <td>{{ }}</td>
+            <td>{{ }}</td>
+            <td>{{ }}</td>
+            <td>{{ }}</td>
+            <td>{{ }}</td>
+          </tr>
+        </tbody> -->
+      <tbody>
+        <tr class="">
+          <td>1</td>
+          <td>a</td>
+          <td>a</td>
+          <td>a</td>
+          <td>a</td>
+          <td>a</td>
+          <td>a</td>
+          <td>
+            <div class="row">
+              <div
+                class="col"
+                onclick="document.getElementById('modal-confirm').style.display='block'"
+              >
+              <i class="fas fa-lock"></i>
+              </div>
+              <div class="col"><i class="far fa-eye"></i></div>
+              <div
+                class="col"
+                onclick="document.getElementById('modal-customer-info').style.display='block'"
+              >
+              <i class="far fa-edit"></i>
+              </div>
+            </div>
+          </td>
+        </tr>
+
+        <tr class="">
+          <td>1</td>
+          <td>a</td>
+          <td>a</td>
+          <td>a</td>
+          <td>a</td>
+          <td>a</td>
+          <td>a</td>
+          <td>
+            <div class="row">
+              <div
+                class="col"
+                onclick="document.getElementById('modal-confirm').style.display='block'"
+              >
+                <i class="far fa-lock"></i>
+              </div>
+              <div class="col"><i class="far fa-lock"></i></div>
+              <div
+                class="col"
+                onclick="document.getElementById('modal-customer-info').style.display='block'"
+              >
+              <i class="far fa-lock"></i>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr class="">
+          <td>1</td>
+          <td>a</td>
+          <td>a</td>
+          <td>a</td>
+          <td>a</td>
+          <td>a</td>
+          <td>a</td>
+          <td>
+            <div class="row">
+              <div
+                class="col"
+                onclick="document.getElementById('modal-confirm').style.display='block'"
+              >
+              <i class="fas fa-lock"></i>
+              </div>
+              <div class="col"><i class="far fa-lock"></i></div>
+              <div
+                class="col"
+                onclick="document.getElementById('modal-customer-info').style.display='block'"
+              >
+              <i class="far fa-lock"></i>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div id="modal-info" class="modal fade show">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-info-content">
+      <div class="modal-info-header">
+        <div>
+          <h3>Thêm mới khách hàng</h3>
+        </div>
+        <button
+          _ngcontent-c6=""
+          aria-label="Close"
+          class="close"
+          data-dismiss="modal"
+          type="button"
+          onclick="document.getElementById('modal-info').style.display='none'"
+        >
+          <span _ngcontent-c6="" aria-hidden="true">×</span>
+        </button>
+      </div>
+      <!-- /.card-header -->
+      <div class="modal-info-body">
+        <form>
+          <div class="row">
+            <div class="col">
+              <div class="form-group">
+                <label>Tên khách hàng</label>
+                <input type="text" class="form-control" />
+              </div>
+
+              <div class="form-group">
+                <label>Giới tính</label>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="flexRadioDefault1"
+                  />
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Nam
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="flexRadioDefault2"
+                    checked
+                  />
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    Nữ
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>Ngày cấp CMND/CCCD</label>
+                <div class="input-group">
+                  <input
+                    type="date"
+                    name="issue_date"
+                    placeholder="dd/mm/yyyy"
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Ngân hàng</label>
+                <select class="form-control select2bs4" style="width: 100%">
+                  <option selected="selected">VPBank</option>
+                  <option>MBBank</option>
+                </select>
+              </div>
+              <!-- /.form-group -->
+            </div>
+            <div class="col">
+              <div class="form-group">
+                <label>Quốc tịch</label>
+                <select class="form-control select2bs4" style="width: 100%">
+                  <option selected="selected">Việt Nam</option>
+                  <option>Another country</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label>Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="Enter email"
+                />
+              </div>
+
+              <div class="form-group">
+                <label>Nơi cấp CMND/CCD</label>
+                <select class="form-control select2bs4" style="width: 100%">
+                  <option selected="selected">Hà Nội</option>
+                  <option>...</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label>Chi nhánh Ngân hàng</label>
+                <select class="form-control select2bs4" style="width: 100%">
+                  <option selected="selected">Hà Nội</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <!-- /.form-group -->
+            </div>
+            <div class="col">
+              <div class="form-group">
+                <label>Ngày sinh</label>
+                <div class="input-group">
+                  <input
+                    type="date"
+                    name="issue_date"
+                    placeholder="dd/mm/yyyy"
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>Địa chỉ</label>
+                <input type="text" class="form-control" />
+              </div>
+
+              <div class="form-group">
+                <label>Số tài khoản ngân hàng</label>
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-group">
+                <label>Số điện thoại</label>
+                <input type="text" class="form-control" />
+              </div>
+
+              <div class="form-group">
+                <label>Số CMND/CCCD</label>
+                <input type="text" class="form-control" />
+              </div>
+
+              <div class="form-group">
+                <label>Tên chủ tài khoản</label>
+                <input type="text" class="form-control" />
+              </div>
+
+              <button type="submit" class="btn btn-default float-end">
+                Submit
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="modal-confirm" class="modal fade show">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div>
+          <h3>Khóa tài khoản</h3>
+        </div>
+        <button
+          _ngcontent-c6=""
+          aria-label="Close"
+          class="close"
+          data-dismiss="modal"
+          type="button"
+          onclick="document.getElementById('modal-confirm').style.display='none'"
+        >
+          <span _ngcontent-c6="" aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div _ngcontent-c6="" class="text-center">
+          <i class="fas fa-exclamation-circle"></i>
+          <h4
+            _ngcontent-c6=""
+            class="text-center mat-dialog-title"
+            mat-dialog-title=""
+            style="font-size: medium"
+            id="mat-dialog-title-2"
+          >
+            Chắc chắn khóa tài khoản khách hàng?
+          </h4>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button
+          _ngcontent-c6=""
+          class="btn btn-primary mat-raised-button mat-primary"
+          color="primary"
+          data-dismiss="modal"
+          mat-raised-button=""
+          style="background-color: #fcb11f"
+        >
+          <span class="mat-button-wrapper">OK</span>
+          <div class="mat-button-ripple mat-ripple" matripple=""></div>
+          <div class="mat-button-focus-overlay"></div>
+        </button>
+        <button
+          _ngcontent-c6=""
+          class="btn btn-default"
+          data-dismiss="modal"
+          type="button"
+          onclick="document.getElementById('modal-confirm').style.display='none'"
+        >
+          Cancel
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="modal-customer-info" class="modal fade show">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-customer-content">
+      <div class="modal-customer-header">
+        <div>
+          <h3>Cập nhật khách hàng</h3>
+        </div>
+        <button
+          _ngcontent-c6=""
+          aria-label="Close"
+          class="close"
+          data-dismiss="modal"
+          type="button"
+          onclick="document.getElementById('modal-customer-info').style.display='none'"
+        >
+          <span _ngcontent-c6="" aria-hidden="true">×</span>
+        </button>
+      </div>
+      <!-- /.card-header -->
+      <div class="modal-customer-body">
+        <form>
+          <div class="row">
+            <div class="col">
+              <div class="form-group">
+                <label>Tên khách hàng</label>
+                <input type="text" class="form-control" />
+              </div>
+              <!-- /.form-group -->
+              <div class="form-group">
+                <label>Giới tính</label>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="flexRadioDefault1"
+                  />
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Nam
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="flexRadioDefault2"
+                    checked
+                  />
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    Nữ
+                  </label>
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Ngày cấp CMND/CCCD</label>
+                <div class="input-group">
+                  <input
+                    type="date"
+                    name="issue_date"
+                    placeholder="dd/mm/yyyy"
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Ngân hàng</label>
+                <select class="form-control select2bs4" style="width: 100%">
+                  <option selected="selected">VPBank</option>
+                  <option>MBBank</option>
+                </select>
+              </div>
+              <!-- /.form-group -->
+            </div>
+            <div class="col">
+              <div class="form-group">
+                <label>Quốc tịch</label>
+                <select class="form-control select2bs4" style="width: 100%">
+                  <option selected="selected">Việt Nam</option>
+                  <option>Another country</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label>Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="Enter email"
+                />
+              </div>
+
+              <div class="form-group">
+                <label>Nơi cấp CMND/CCD</label>
+                <select class="form-control select2bs4" style="width: 100%">
+                  <option selected="selected">Hà Nội</option>
+                  <option>...</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label>Chi nhánh Ngân hàng</label>
+                <select class="form-control select2bs4" style="width: 100%">
+                  <option selected="selected">Hà Nội</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <!-- /.form-group -->
+            </div>
+            <div class="col">
+              <div class="form-group">
+                <label>Ngày sinh</label>
+                <div class="input-group">
+                  <input
+                    type="date"
+                    name="issue_date"
+                    placeholder="dd/mm/yyyy"
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>Địa chỉ</label>
+                <input type="text" class="form-control" />
+              </div>
+
+              <div class="form-group">
+                <label>Số tài khoản ngân hàng</label>
+                <input type="text" class="form-control" />
+              </div>
+
+              <div class="form-group">
+                <label>Trạng thái</label>
+                <select class="form-control select2bs4" style="width: 100%">
+                  <option selected="selected">Đang hoạt động</option>
+                  <option>Không hoạt động</option>
+                </select>
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-group">
+                <label>Số điện thoại</label>
+                <input type="text" class="form-control" />
+              </div>
+
+              <div class="form-group">
+                <label>Số CMND/CCCD</label>
+                <input type="text" class="form-control" />
+              </div>
+
+              <div class="form-group">
+                <label>Tên chủ tài khoản</label>
+                <input type="text" class="form-control" />
+              </div>
+
+              <button type="submit" class="btn btn-default pull-right">
+                Submit
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

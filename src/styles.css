@@ -1,2 +1,15 @@
 @import "../node_modules/bootstrap/dist/css/bootstrap.css";
-@import "../node_modules/font-awesome/css/font-awesome.min.css";
+@import "../fontawesome-free-5.15.4-web/css/all.css";
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a.active {
+  background-color: #FCB117;
+}
+
+a p {
+  color: inherit;
+}

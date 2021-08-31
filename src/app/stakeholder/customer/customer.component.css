@@ -1,0 +1,135 @@
+#search {
+  width: 100%;
+  padding-top: 5px;
+}
+
+#search div .title {
+  padding-bottom: 2px;
+}
+
+#search .col {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+#search h3 {
+  color: #c91828;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 150%;
+}
+
+.table-data-header h3 {
+  color: #c91828;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 150%;
+}
+
+.table-data-header {
+  padding-top: 5px;
+  padding-bottom: 2px;
+}
+
+.table-data-header button {
+  background-image: linear-gradient(to right, #FCB11F, #FFDC16 );
+}
+
+#tb table {
+  width: 100%;
+  text-align: center;
+}
+
+.modal-info-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0,0,0,.2);
+  border-radius: .3rem;
+  box-shadow: 0 .25rem .5rem rgba(0,0,0,.5);
+  outline: 0;
+}
+
+#modal-info {
+  display: none;
+}
+
+#modal-info .modal-info-body button {
+  background-image: linear-gradient(to right, #FCB11F, #FFDC16 );
+}
+
+#modal-info .modal-info-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid #e9ecef;
+  border-top-left-radius: calc(.3rem - 1px);
+  border-top-right-radius: calc(.3rem - 1px);
+}
+
+#modal-info .modal-info-header button {
+  border: none;
+  background: none;
+}
+
+#modal-info .modal-info-body{
+  position: relative;
+  flex: 1 1 auto;
+  padding: 1rem;
+}
+
+#modal-customer-info {
+  display: none;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.modal-customer-body button {
+  background-image: linear-gradient(to right, #FCB11F, #FFDC16 );
+}
+
+.modal-customer-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid #e9ecef;
+  border-top-left-radius: calc(.3rem - 1px);
+  border-top-right-radius: calc(.3rem - 1px);
+}
+
+.modal-customer-header button {
+  border: none;
+  background: none;
+}
+
+.modal-customer-body{
+  position: relative;
+  flex: 1 1 auto;
+  padding: 1rem;
+}
+
+.modal-customer-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0,0,0,.2);
+  border-radius: .3rem;
+  box-shadow: 0 .25rem .5rem rgba(0,0,0,.5);
+  outline: 0;
+}
+
+
