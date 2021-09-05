@@ -6,10 +6,11 @@ a {
   text-decoration: none;
 }
 
-a.active {
+.active {
   background-color: #FCB117;
 }
 
 a p {
-  color: inherit;
+  font-family: 'Work Sans', sans-serif;
+  line-height: 150%;
 }

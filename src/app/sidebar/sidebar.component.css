@@ -4,12 +4,11 @@ ul {
   list-style-type: none;
 }
 
-#sidebar .item-fullbox p {
+.item-fullbox p {
   font-family: 'Work Sans', sans-serif;
   font-size: 16px;
   font-weight: bold;
   line-height: 150%;
-
 }
 
 .sidebar li {
@@ -18,4 +17,8 @@ ul {
 
 .item-fullbox i {
   padding-right: 1px;
+}
+
+a:hover, a:active {
+  background-color: #FCB11F ;
 }

@@ -5,9 +5,10 @@
 
 #search input{
   width: 60%;
+  padding: 10px;
 }
 
-div .title {
+#search div .title {
   padding-bottom: 2px;
 }
 
@@ -18,7 +19,7 @@ div .title {
   line-height: 150%;
 }
 
-h3 {
+#search h3 {
   color: #c91828;
   font-family: 'Work Sans', sans-serif;
   font-size: 18px;

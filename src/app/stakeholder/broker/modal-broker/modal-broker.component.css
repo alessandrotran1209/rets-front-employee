@@ -2,11 +2,11 @@
   display:none;
 }
 
-.modal-broker-body button {
+#modal-broke .modal-broker-body button {
   background-color: #FCB117;
 }
 
-.modal-broker-header {
+#modal-broke .modal-broker-header {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -16,18 +16,18 @@
   border-top-right-radius: calc(.3rem - 1px);
 }
 
-.modal-broker-header button {
+#modal-broke .modal-broker-header button {
   border: none;
   background: none;
 }
 
-.modal-broker-body{
+#modal-broke .modal-broker-body{
   position: relative;
   flex: 1 1 auto;
   padding: 1rem;
 }
 
-.modal-broker-content {
+#modal-broke .modal-broker-content {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -41,6 +41,6 @@
   outline: 0;
 }
 
-.modal-broker-body .form-group {
+#modal-broke .modal-broker-body .form-group {
   padding-bottom: 10px;
 }

@@ -1,4 +1,5 @@
-  <!-- Brand Logo -->
+ <div id="sidebar-wrapper">
+ <!-- Brand Logo -->
   <a class="brand-link">
     <img
       src="assets/img/Logo.png"
@@ -23,35 +24,53 @@
           <ul class="nav nav-treeview" id="stakeholders" style="display:none">
             <li class="nav-item">
               <a id="a-customer" routerLink="/customer" routerLinkActive="active" class="nav-link" >
-                <div class="item-fullbox d-flex justify-content-center">
+                <div class="item-fullbox d-flex offset-md-1">
                   <i class="far fa-user fa-lg d-inline"></i>
-                  <p class="d-inline">Khách hàng</p>
+                  <p class="d-inline offset-md-2">Khách hàng</p>
                 </div>
               </a>
             </li>
             <li class="nav-item">
               <a id="a-broker" routerLink="/broker" routerLinkActive="active" class="nav-link">
-                <div class="item-fullbox d-flex justify-content-center">
+                <div class="item-fullbox d-flex offset-md-1">
                   <i class="far fa-handshake fa-lg d-inline"></i>
-                  <p class="d-inline">Môi giới</p>
+                  <p class="d-inline offset-md-2">Môi giới</p>
                 </div>
               </a>
             </li>
             <li class="nav-item">
               <a id="a-investor" routerLink="/investor" routerLinkActive="active" class="nav-link">
-                <div class="item-fullbox d-flex justify-content-center">
+                <div class="item-fullbox d-flex offset-md-1">
                   <i class="fas fa-university fa-lg d-inline"></i>
-                  <p class="d-inline">Chủ đầu tư</p>
+                  <p class="d-inline offset-md-2">Chủ đầu tư</p>
                 </div>
               </a>
             </li>
           </ul>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" id="product">
           <a href="" class="nav-link">
             <i class="fas fa-home fa-lg d-inline"></i>
             <p class="d-inline">Sản phẩm</p>
           </a>
+          <ul class="nav nav-treeview" id="stakeholders" style="display:none">
+            <li class="nav-item">
+              <a id="a-customer" routerLink="/project" routerLinkActive="active" class="nav-link" >
+                <div class="item-fullbox d-flex justify-content-center">
+                  <i class="far fa-user fa-lg d-inline"></i>
+                  <p class="d-inline">Dự án</p>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a id="a-broker" routerLink="/investment" routerLinkActive="active" class="nav-link">
+                <div class="item-fullbox d-flex justify-content-center">
+                  <i class="far fa-handshake fa-lg d-inline"></i>
+                  <p class="d-inline">Sản phẩm đầu tư</p>
+                </div>
+              </a>
+            </li>
+          </ul>
         </li>
         <li class="nav-item">
           <a href="" class="nav-link">
@@ -77,3 +96,4 @@
     </nav>
     <!-- /.sidebar-menu -->
   </div>
+</div>

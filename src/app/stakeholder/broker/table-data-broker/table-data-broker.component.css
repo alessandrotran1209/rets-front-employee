@@ -1,4 +1,4 @@
-h3 {
+#broker-data h3 {
   color: #c91828;
   font-family: 'Work Sans', sans-serif;
   font-size: 18px;
@@ -6,20 +6,20 @@ h3 {
   line-height: 150%;
 }
 
-.table-data-header {
+#broker-data .table-data-header {
   padding-top: 5px;
   padding-bottom: 2px;
 }
 
-.table-data-header button {
+#broker-data .table-data-header button {
   background-color: #fcb11f;
 }
 
-.content {
+#broker-data .content {
   width: 95%;
 }
 
-table {
+#broker-data table {
   width: 100%;
   text-align: center;
 }
