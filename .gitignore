@@ -43,3 +43,8 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# fontawesome
+/fontawesome-free-5.15.4-web
+/fontawesome-pro-5.12.0
+

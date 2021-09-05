@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+
 import { CustomerComponent } from './stakeholder/customer/customer.component';
 import { BrokerComponent } from './stakeholder/broker/broker.component';
 import { InvestorComponent } from './stakeholder/investor/investor.component';
