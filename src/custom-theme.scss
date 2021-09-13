@@ -51,7 +51,7 @@ $RETS-Front-accent: mat-palette($mat-grey , A100, A400);
 // The warn palette is optional (defaults to red).
 $RETS-Front-warn: mat-palette($mat-red);
 $RETS-typography: mat-typography-config(
-  $font-family: "Work Sans",
+  $font-family: "Work Sans",  
   $display-4: mat-typography-level(112px, 112px, 300, $letter-spacing: -0.05em),
   $display-3: mat-typography-level(56px, 56px, 400, $letter-spacing: -0.02em),
   $display-2: mat-typography-level(45px, 48px, 400, $letter-spacing: -0.005em),
@@ -85,3 +85,4 @@ $RETS-Front-theme: mat-light-theme(
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
 @include angular-material-theme($RETS-Front-theme);
+@include mat-core($RETS-typography);

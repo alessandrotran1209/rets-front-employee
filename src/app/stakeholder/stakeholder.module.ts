@@ -9,8 +9,7 @@ import { AppRoutingModule  } from './stakeholder-routing.module';
 import { RouterModule, Routes } from '@angular/router';
 @NgModule({
   declarations: [
-    CustomerComponent,
-    InvestorComponent
+    
   ],
   imports: [
     BrowserModule,

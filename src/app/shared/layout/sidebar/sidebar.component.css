@@ -19,6 +19,6 @@ ul {
   padding-right: 1px;
 }
 
-a:hover, a:active {
-  background-color: #FCB11F ;
+a.active {
+  background: #FCB11F ;
 }

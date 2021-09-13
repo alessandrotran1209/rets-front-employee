@@ -1,99 +1,98 @@
- <div id="sidebar-wrapper">
- <!-- Brand Logo -->
-  <a class="brand-link">
-    <img
-      src="assets/img/Logo.png"
-      alt="TMG Logo"
-    />
-  </a>
-    <span class="brand-text font-weight-light">RETS</span>
+<div id="sidebar-wrapper">
+  <!-- Brand Logo -->
+  <div id="logo" class="row">
+    <div class="col">
+      <a class="brand-link">
+        <img src="assets/img/Logo.png" style="max-width: 100%; max-height: 100%" alt="TMG Logo"/>
+      </a>
+    </div>
+    <div class="col text-center">
+      <div class="mat-title" style="color: #FCB11F">RETS</div>
+    </div>
+  </div>
 
-
-  <!-- Sidebar -->
   <div class="sidebar" id="sidebar">
-    <!-- Sidebar Menu -->
-    <nav class="mt-2">
-      <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-        <li class="nav-item" id="stakeholder">
-          <a class="nav-link" routerLink="/stakeholder" onclick="document.getElementById('stakeholders').style.display='block'">
+    <mat-list-item #stakeholder>
+      <a class="nav-link" routerLink="/stakeholder"
+        onclick="document.getElementById('stakeholders').style.display='block'">
+        <div class="item-fullbox">
+          <mat-icon>dashboard</mat-icon>
+          <p class="d-inline">Các bên liên quan</p>
+        </div>
+      </a>
+      <mat-nav-list id="stakeholders" style="display: none">
+        <mat-list-item>
+          <a id="a-customer" routerLink="/customer" routerLinkActive="active" class="nav-link">
             <div class="item-fullbox">
-              <i class="nav-icon fas fa-th d-inline"></i>
-              <p class="d-inline">Các bên liên quan</p>
+              <mat-icon>perm_identity</mat-icon>
+              <p class="d-inline offset-md-2">Khách hàng</p>
             </div>
           </a>
-          <ul class="nav nav-treeview" id="stakeholders" style="display:none">
-            <li class="nav-item">
-              <a id="a-customer" routerLink="/customer" routerLinkActive="active" class="nav-link" >
-                <div class="item-fullbox d-flex offset-md-1">
-                  <i class="far fa-user fa-lg d-inline"></i>
-                  <p class="d-inline offset-md-2">Khách hàng</p>
-                </div>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a id="a-broker" routerLink="/broker" routerLinkActive="active" class="nav-link">
-                <div class="item-fullbox d-flex offset-md-1">
-                  <i class="far fa-handshake fa-lg d-inline"></i>
-                  <p class="d-inline offset-md-2">Môi giới</p>
-                </div>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a id="a-investor" routerLink="/investor" routerLinkActive="active" class="nav-link">
-                <div class="item-fullbox d-flex offset-md-1">
-                  <i class="fas fa-university fa-lg d-inline"></i>
-                  <p class="d-inline offset-md-2">Chủ đầu tư</p>
-                </div>
-              </a>
-            </li>
-          </ul>
-        </li>
-        <li class="nav-item" id="product">
-          <a href="" class="nav-link">
-            <i class="fas fa-home fa-lg d-inline"></i>
-            <p class="d-inline">Sản phẩm</p>
+        </mat-list-item>
+        <mat-list-item>
+          <a id="a-broker" routerLink="/broker" routerLinkActive="active" class="nav-link">
+            <div class="item-fullbox">
+              <i class="fal fa-handshake"></i>
+              <p class="d-inline offset-md-2">Môi giới</p>
+            </div>
           </a>
-          <ul class="nav nav-treeview" id="stakeholders" style="display:none">
-            <li class="nav-item">
-              <a id="a-customer" routerLink="/project" routerLinkActive="active" class="nav-link" >
-                <div class="item-fullbox d-flex justify-content-center">
-                  <i class="far fa-user fa-lg d-inline"></i>
-                  <p class="d-inline">Dự án</p>
-                </div>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a id="a-broker" routerLink="/investment" routerLinkActive="active" class="nav-link">
-                <div class="item-fullbox d-flex justify-content-center">
-                  <i class="far fa-handshake fa-lg d-inline"></i>
-                  <p class="d-inline">Sản phẩm đầu tư</p>
-                </div>
-              </a>
-            </li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a href="" class="nav-link">
-            <i class="fas fa-clipboard-list fa-lg d-inline"></i>
-            <p class="d-inline">Giao dịch</p>
+        </mat-list-item>
+        <mat-list-item>
+          <a id="a-investor" routerLink="/investor" routerLinkActive="active" class="nav-link">
+            <div class="item-fullbox">
+              <mat-icon>account_balance</mat-icon>
+              <p class="d-inline offset-md-2">Chủ đầu tư</p>
+            </div>
           </a>
-        </li>
-        <li class="nav-item">
-          <a href="l" class="nav-link">
-            <i class="fas fa-user-friends fa-lg"></i>
-            <p class="d-inline">Hợp đồng</p>
+        </mat-list-item>
+      </mat-nav-list>
+    </mat-list-item>
+
+    <mat-list-item #product>
+      <a href="" class="nav-link">
+        <mat-icon>home</mat-icon>
+        <p class="d-inline">Sản phẩm</p>
+      </a>
+      <mat-nav-list>
+        <mat-list-item>
+          <a id="a-customer" routerLink="/project" routerLinkActive="active" class="nav-link">
+            <div class="item-fullbox">
+              <i class="far fa-user fa-lg d-inline"></i>
+              <p class="d-inline offset-md-2">Dự án</p>
+            </div>
           </a>
-        </li>
-        <hr>
-        <li class="nav-header">Settings</li>
-        <li class="nav-item">
-          <a href="" class="nav-link">
-            <i class="fas fa-cog fa-lg d-inline"></i>
-            <p class="d-inline">Người dùng hệ thống</p>
+        </mat-list-item>
+        <mat-list-item>
+          <a id="a-broker" routerLink="/investment" routerLinkActive="active" class="nav-link">
+            <div class="item-fullbox">
+              <i class="far fa-handshake fa-lg d-inline"></i>
+              <p class="d-inline offset-md-2">Sản phẩm đầu tư</p>
+            </div>
           </a>
-        </li>
-      </ul>
-    </nav>
-    <!-- /.sidebar-menu -->
+        </mat-list-item>
+      </mat-nav-list>
+    </mat-list-item>
+
+    <mat-list-item>
+      <a href="" class="nav-link">
+        <i class="fas fa-clipboard-list fa-lg d-inline"></i>
+        <p class="d-inline">Giao dịch</p>
+      </a>
+    </mat-list-item>
+
+    <mat-list-item>
+      <a href="" class="nav-link">
+        <mat-icon>supervisor_account</mat-icon>
+        <p class="d-inline">Hợp đồng</p>
+      </a>
+    </mat-list-item>
+    <hr>
+    <li class="nav-header">Settings</li>
+    <mat-list-item>
+      <a href="" class="nav-link">
+        <i class="fas fa-cog fa-lg d-inline"></i>
+        <p class="d-inline">Người dùng hệ thống</p>
+      </a>
+    </mat-list-item>
   </div>
 </div>

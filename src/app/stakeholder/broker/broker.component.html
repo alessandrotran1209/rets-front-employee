@@ -1,12 +1,12 @@
 <div id="broker-search">
-  <div><h3>TÌM KIẾM</h3></div>
-  <div class="row">
+  <div class="mat-title">TÌM KIẾM</div>
+  <div class="row mat-body-2">
     <div class="col">
-      <div class="title">Mã môi giới</div>
+      <div>Mã môi giới</div>
       <div class="input-group input-group-sm">
         <input
           id="search-name"
-          class="form-control form-control-lg"
+          class="form-control form-control-lg border rounded mat-body-1"
           type="search"
           placeholder="Điền tên khách hàng"
           aria-label="Search"
@@ -15,11 +15,11 @@
       </div>
     </div>
     <div class="col">
-      <div class="title">Tên môi giới</div>
+      <div>Tên môi giới</div>
       <div class="input-group input-group-sm">
         <input
           id="search-card"
-          class="form-control form-control-lg"
+          class="form-control form-control-lg border rounded mat-body-1"
           type="search"
           placeholder="Điền CMND/CCCD"
           aria-label="Search"
@@ -28,7 +28,7 @@
       </div>
     </div>
     <div class="col">
-      <div class="title">Trạng thái</div>
+      <div>Trạng thái</div>
       <div class="input-group input-group-sm">
         <select class="form-control select2bs4" style="width: 100%">
           <option selected="selected">1</option>
@@ -36,20 +36,20 @@
         </select>
       </div>
     </div>
-    <div class="col">
+    <div class="col align-self-end">
       <button
         type="submit"
-        class="btn btn-default float-end"
+        class="btn btn-default float-end mat-button"
         style="background-color: #004aae; color: #ffffff; text-align: center"
       >
         Tìm kiếm
       </button>
     </div>
-    <div class="col">
+    <div class="col align-self-end">
       <button
         id="btn-clr"
         type="submit"
-        class="btn btn-default float-end"
+        class="btn btn-default float-end mat-button"
         style="background-color: #d2d2d2; text-align: center"
       >
         Clear
@@ -61,13 +61,11 @@
 
 <div class="table-data-header" id="broker-data-header">
   <div class="row">
-    <div class="col">
-      <h3>DANH SÁCH MÔI GIỚI</h3>
-    </div>
+    <div class="col mat-title">DANH SÁCH MÔI GIỚI</div>
     <div class="col">
       <button
         type="submit"
-        class="btn btn-default float-end"
+        class="btn btn-default float-end mat-button"
         onclick="document.getElementById('modal-broker').style.display='block'"
       >
         Thêm mới
@@ -78,7 +76,7 @@
 <div class="table-data" id="broker-data">
   <div class="content">
     <table class="table table-hover">
-      <thead>
+      <thead class="mat-body-2">
         <tr>
           <th class="text-center">STT</th>
           <th class="text-center">Mã môi giới</th>
@@ -101,7 +99,7 @@
             <td>{{ }}</td>
           </tr>
         </tbody> -->
-      <tbody>
+      <tbody class="mat-body-1">
         <tr class="">
           <td>1</td>
           <td>a</td>

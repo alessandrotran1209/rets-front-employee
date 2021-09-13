@@ -3,31 +3,12 @@
   padding-top: 5px;
 }
 
-#broker-search input {
-  width: 60%;
-}
-
 #broker-search .col {
-  font-family: "Work Sans", sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 150%;
+  margin-right: 18px;
 }
 
-#broker-search h3 {
+.mat-title {
   color: #c91828;
-  font-family: "Work Sans", sans-serif;
-  font-size: 18px;
-  font-weight: normal;
-  line-height: 150%;
-}
-
-#broker-data-header h3 {
-  color: #c91828;
-  font-family: "Work Sans", sans-serif;
-  font-size: 18px;
-  font-weight: normal;
-  line-height: 150%;
 }
 
 #broker-data-header .table-data-header {

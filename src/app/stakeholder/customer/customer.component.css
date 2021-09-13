@@ -3,34 +3,21 @@
   padding-top: 5px;
 }
 
-#search div .title {
-  padding-bottom: 2px;
+#search .mat-title {
+  color: #c91828;
+}
+
+#search .mat-body-2 { 
+  margin: 0;
+  padding-bottom: 5px;
 }
 
 #search .col {
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 150%;
+  margin-right: 18px;
 }
 
-#search h3 {
-  color: #c91828;
-  font-size: 18px;
-  font-weight: normal;
-  line-height: 150%;
-}
-
-#search .input-group {
-  text-align: center;
-  vertical-align: center;
-}
-
-.table-data-header h3 {
-  color: #c91828;
-  font-family: "Work Sans", sans-serif;
-  font-size: 18px;
-  font-weight: normal;
-  line-height: 150%;
+.table-data-header .mat-title {
+  color: #c91828;  
 }
 
 .table-data-header {

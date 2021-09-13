@@ -1,12 +1,12 @@
 <div id="search">
-  <div><h3>TÌM KIẾM</h3></div>
+  <div class='mat-title'>TÌM KIẾM</div>
   <div class="row">
     <div class="col">
-      <div class="title">Tên khách hàng</div>
+      <div class="mat-body-2">Tên khách hàng</div>
       <div class="input-group input-group-sm">
         <input
           id="search-name"
-          class="form-control form-control-lg border rounded"
+          class="form-control form-control-lg border rounded mat-body-1"
           type="search"
           placeholder="Điền tên khách hàng"
           aria-label="Search"
@@ -15,11 +15,11 @@
       </div>
     </div>
     <div class="col">
-      <div class="title">CMND/CCCD</div>
+      <div class="mat-body-2">CMND/CCCD</div>
       <div class="input-group input-group-sm">
         <input
           id="search-card"
-          class="form-control form-control-lg border rounded"
+          class="form-control form-control-lg border rounded mat-body-1"
           type="search"
           placeholder="Điền CMND/CCCD"
           aria-label="Search"
@@ -28,7 +28,7 @@
       </div>
     </div>
     <div class="col">
-      <div class="title">Số điện thoại</div>
+      <div class="mat-body-2">Số điện thoại</div>
       <div class="input-group input-group-sm">
         <input
           id="search-number"
@@ -40,8 +40,8 @@
             <i class="fa fa-search icon"></i>
       </div>
     </div>
-    <div class="col">
-      <div class="title">Username</div>
+    <div class="col ">
+      <div class="mat-body-2">Username</div>
       <div class="input-group input-group-sm">
         <input
           id="search-username"
@@ -53,15 +53,24 @@
             <i class="fa fa-search icon"></i>
       </div>
     </div>
-    <div class="col">
+    <div class="col align-self-end">
       <button
-        mat-button color="primary"
+        type="submit"
+        class="btn btn-default float-end mat-button"
+        style="background-color: #004aae; color: #ffffff; text-align: center"
       >
         Tìm kiếm
       </button>
     </div>
-    <div class="col">
-      <button mat-button color="accent">Clear</button>
+    <div class="col align-self-end">
+      <button
+        id="btn-clr"
+        type="submit"
+        class="btn btn-default float-end mat-button"
+        style="background-color: #d2d2d2; text-align: center"
+      >
+        Clear
+      </button>
     </div>
   </div>
 </div>
@@ -71,11 +80,12 @@
 <div class="table-data-header">
   <div class="row">
     <div class="col">
-      <h3>DANH SÁCH KHÁCH HÀNG</h3>
+      <div class='mat-title'>DANH SÁCH KHÁCH HÀNG</div>
     </div>
     <div class="col">
       <button
-        mat-button
+        type="submit"
+        class="btn btn-default float-end mat-button"
         onclick="document.getElementById('modal-info').style.display='block'"
       >
         Thêm mới
@@ -87,7 +97,7 @@
 <div class="table-data" id="tb">
   <div class="content">
     <table class="table table-hover">
-      <thead>
+      <thead class="mat-body-2">
         <tr>
           <th class="text-center">STT</th>
           <th class="text-center">Họ và tên</th>
@@ -110,7 +120,7 @@
             <td>{{ }}</td>
           </tr>
         </tbody> -->
-      <tbody>
+      <tbody class='mat-body-1'>
         <tr class="">
           <td>1</td>
           <td>a</td>
