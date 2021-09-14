@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CommonModule } from '@angular/common';
 
 import { AppComponent } from './app.component';
 
@@ -11,7 +13,7 @@ import { MatIconModule } from '@angular/material/icon';
 
 import { AppRoutingModule } from './app-routing.module';
 import { ProductComponent } from './product/product.component';
-
+import { StakeholdersModule } from './stakeholders/stakeholders.module';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,10 @@ import { ProductComponent } from './product/product.component';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
+    CommonModule,
+    StakeholdersModule,
     MaterialModule,
     MatIconModule
   ],

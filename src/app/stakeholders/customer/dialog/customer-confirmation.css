@@ -1,0 +1,14 @@
+#cancel {
+    background-image: linear-gradient(to right, #fcb11f, #ffdc16);
+}
+
+mat-icon {
+    width: calc(100% / 6.3);
+    height: calc(100% / 4.601);
+}
+
+.mat-dialog-title p {
+    font-weight: bold;
+    margin: 0;
+    height: 100%;
+}

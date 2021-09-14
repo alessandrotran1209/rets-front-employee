@@ -1,2 +1,6 @@
-@import "../fontawesome-pro-5.12.0/fontawesome-pro-5.12.0-web/css/all.css";
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+::ng-deep .green-snackbar {
+    width: calc(100% / 4.788);
+    background: #1BCBA1;
+  }

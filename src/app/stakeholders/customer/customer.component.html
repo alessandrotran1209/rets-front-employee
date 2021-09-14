@@ -83,7 +83,7 @@
     </div>
   </div>
       
-  <hr>
+  <mat-divider style="margin-top: 25px"></mat-divider>
 
   <div class="table-data-header">
     <div class="row">
@@ -138,27 +138,24 @@
             <td>a</td>
             <td>a</td>
             <td>
-              <div class="row">
-                <div
-                  class="col"
-                  onclick="document.getElementById('modal-confirm').style.display='block'"
-                >
-                <span class="material-icons md-18">
-                    lock_open
-                    </span>
+                <div class="d-inline">
+                  <button mat-button (click)="openConfirmationDialog()">
+                    <span class="material-icons md-18">lock_open</span>
+                  </button>
                 </div>
-                <div class="col"><span class="material-icons md-18">
-                    visibility
-                    </span></div>
+                <div class="d-inline">
+                  <button mat-button (click)="openInformationDialog()">
+                    <span class="material-icons md-18">visibility</span>
+                  </button>
+                </div>
                 <div
-                  class="col"
+                  class="d-inline"
                   onclick="document.getElementById('modal-customer-info').style.display='block'"
                 >
-                <span class="material-icons">
-                    lock_open
-                    </span>
+                  <button mat-button (click)="openInformationDialog()">
+                    <mat-icon svgIcon="note_pencil"></mat-icon>
+                  </button>
                 </div>
-              </div>
             </td>
           </tr>
   
@@ -379,64 +376,7 @@
     </div>
   </div>
   
-  <div id="modal-confirm" class="modal fade show">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <div>
-            <h3>Khóa tài khoản</h3>
-          </div>
-          <button
-            _ngcontent-c6=""
-            aria-label="Close"
-            class="close"
-            data-dismiss="modal"
-            type="button"
-            onclick="document.getElementById('modal-confirm').style.display='none'"
-          >
-            <span _ngcontent-c6="" aria-hidden="true">×</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <div _ngcontent-c6="" class="text-center">
-            <i class="fas fa-exclamation-circle"></i>
-            <h4
-              _ngcontent-c6=""
-              class="text-center mat-dialog-title"
-              mat-dialog-title=""
-              style="font-size: medium"
-              id="mat-dialog-title-2"
-            >
-              Chắc chắn khóa tài khoản khách hàng?
-            </h4>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button
-            _ngcontent-c6=""
-            class="btn btn-primary mat-raised-button mat-primary"
-            color="primary"
-            data-dismiss="modal"
-            mat-raised-button=""
-            style="background-color: #fcb11f"
-          >
-            <span class="mat-button-wrapper">OK</span>
-            <div class="mat-button-ripple mat-ripple" matripple=""></div>
-            <div class="mat-button-focus-overlay"></div>
-          </button>
-          <button
-            _ngcontent-c6=""
-            class="btn btn-default"
-            data-dismiss="modal"
-            type="button"
-            onclick="document.getElementById('modal-confirm').style.display='none'"
-          >
-            Cancel
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
+
   
   <div id="modal-customer-info" class="modal fade show">
     <div class="modal-dialog modal-lg">
