@@ -1,547 +1,135 @@
 <div id="search">
     <div class='mat-title'>TÌM KIẾM</div>
-    <div class="row">
-      <div class="col">
-        <div class="mat-body-2">Tên khách hàng</div>
-        <div class="justify-content-center d-flex">
-          <input
-            id="search-name"
-            class="form-control form-control-lg border rounded mat-caption"
-            type="search"
-            placeholder="Điền tên khách hàng"
-            aria-label="Search"
-          />
-          <span class="material-icons">
-            search
-            </span>
+    <form>
+      <div class="row">
+        <div class="col">
+          <div>Tên khách hàng</div>
+          <mat-form-field appearance="outline">          
+            <input matInput placeholder="Điền tên khách hàng">
+            <mat-icon matSuffix>search</mat-icon>
+          </mat-form-field>
+        </div>
+        <div class="col">
+          <div>CMND/CCCD</div>
+          <mat-form-field appearance="outline">          
+            <input matInput placeholder="Điền CMND/CCCD">
+            <mat-icon matSuffix>search</mat-icon>
+          </mat-form-field>
+        </div>
+        <div class="col">
+          <div>Số điện thoại</div>
+          <mat-form-field appearance="outline">          
+            <input matInput placeholder="Điền SĐT">
+            <mat-icon matSuffix>search</mat-icon>
+          </mat-form-field>
+        </div>
+        <div class="col">
+          <div>Email</div>
+          <mat-form-field appearance="outline">          
+            <input matInput placeholder="Điền email">
+            <mat-icon matSuffix>search</mat-icon>
+          </mat-form-field>
+        </div>
+        <div class="col" style='text-align: right; margin-right: 0'>        
+          <button mat-flat-button class="mat-button" style="background-color: #004aae; color: #ffffff;">Tìm kiếm</button>
+        </div>
+        <div class="col" style='text-align: right; margin-right: 0'>
+          <button mat-flat-button class="mat-button" style="background-color: #FAFCFE">Clear</button>
         </div>
       </div>
-      <div class="col">
-        <div class="mat-body-2">CMND/CCCD</div>
-        <div class="justify-content-center d-flex">
-          <input
-            id="search-card"
-            class="form-control form-control-lg border rounded mat-caption"
-            type="search"
-            placeholder="Điền CMND/CCCD"
-            aria-label="Search"
-          />
-          <span class="material-icons text-center">
-            search
-            </span>
-        </div>
-      </div>
-      <div class="col">
-        <div class="mat-body-2">Số điện thoại</div>
-        <div class="justify-content-center d-flex">
-          <input
-            id="search-number"
-            class="form-control form-control-lg border rounded mat-caption"
-            type="search"
-            placeholder="Điền SĐT"
-            aria-label="Search"
-          />
-          <span class="material-icons text-center">
-            search
-            </span>
-        </div>
-      </div>
-      <div class="col ">
-        <div class="mat-body-2">Username</div>
-        <div class="justify-content-center d-flex">
-          <input
-            id="search-username"
-            class="form-control form-control-lg border rounded mat-caption "
-            type="search"
-            placeholder="Điền username"
-            aria-label="Search"
-          />
-          <span class="material-icons text-center">
-            search
-            </span>
-        </div>
-      </div>
-      <div class="col align-self-end">
-        <button
-          type="submit"
-          class="btn btn-default float-end mat-button"
-          style="background-color: #004aae; color: #ffffff; text-align: center"
-        >
-          Tìm kiếm
-        </button>
-      </div>
-      <div class="col align-self-end">
-        <button
-          id="btn-clr"
-          type="submit"
-          class="btn btn-default float-end mat-button"
-          style="background-color: #d2d2d2; text-align: center"
-        >
-          Clear
-        </button>
-      </div>
-    </div>
+    </form>
   </div>
       
-  <mat-divider style="margin-top: 25px"></mat-divider>
+  <mat-divider style="margin-top: 8px"></mat-divider>
 
   <div class="table-data-header">
     <div class="row">
       <div class="col">
         <div class='mat-title'>DANH SÁCH KHÁCH HÀNG</div>
       </div>
-      <div class="col">
-        <button
-          type="submit"
-          class="btn btn-default float-end mat-button"
-          onclick="document.getElementById('modal-info').style.display='block'"
-        >
-          Thêm mới
-        </button>
+      <div class="col" style='text-align: right;'>
+        <button mat-flat-button class="mat-button" style="background-image: linear-gradient(to right, #fcb11f, #ffdc16); font-weight: bold;" (click)='openAdditionDialog()'>Thêm mới</button>
       </div>
     </div>
   </div>
   
   <div class="table-data" id="tb">
-    <div class="content">
-      <table class="table table-hover mat-caption">
-        <thead>
-          <tr>
-            <th class="text-center">STT</th>
-            <th class="text-center">Họ và tên</th>
-            <th class="text-center">CMND/CCCD</th>
-            <th class="text-center">Email</th>
-            <th class="text-center">Số điện thoại</th>
-            <th class="text-center">Username</th>
-            <th class="text-center">Trạng thái</th>
-            <th class="text-center">Thao tác</th>
-          </tr>
-        </thead>
-        <!-- <tbody>
-            <tr class="" *ngFor="let person of pipol">
-              <td>{{ }}</td>
-              <td>{{ }}</td>
-              <td>{{ }}</td>
-              <td>{{ }}</td>
-              <td>{{ }}</td>
-              <td>{{ }}</td>
-              <td>{{ }}</td>
-            </tr>
-          </tbody> -->
-        <tbody>
-          <tr class="">
-            <td>1</td>
-            <td>a</td>
-            <td>a</td>
-            <td>a</td>
-            <td>a</td>
-            <td>a</td>
-            <td>a</td>
-            <td>
-                <div class="d-inline">
-                  <button mat-button (click)="openConfirmationDialog()">
-                    <span class="material-icons md-18">lock_open</span>
-                  </button>
-                </div>
-                <div class="d-inline">
-                  <button mat-button (click)="openInformationDialog()">
-                    <span class="material-icons md-18">visibility</span>
-                  </button>
-                </div>
-                <div
-                  class="d-inline"
-                  onclick="document.getElementById('modal-customer-info').style.display='block'"
-                >
-                  <button mat-button (click)="openInformationDialog()">
-                    <mat-icon svgIcon="note_pencil"></mat-icon>
-                  </button>
-                </div>
-            </td>
-          </tr>
-  
-          <tr class="">
-            <td>1</td>
-            <td>a</td>
-            <td>a</td>
-            <td>a</td>
-            <td>a</td>
-            <td>a</td>
-            <td>a</td>
-            <td>
-              <div class="row">
-                <div
-                  class="col"
-                  onclick="document.getElementById('modal-confirm').style.display='block'"
-                >
-                <i class="fas fa-lock"></i>
-                </div>
-                <div class="col"><i class="far fa-eye"></i></div>
-                <div
-                  class="col"
-                  onclick="document.getElementById('modal-customer-info').style.display='block'"
-                >
-                <i class="far fa-edit"></i>
-                </div>
-              </div>
-            </td>
-          </tr>
-          <tr class="">
-            <td>1</td>
-            <td>a</td>
-            <td>a</td>
-            <td>a</td>
-            <td>a</td>
-            <td>a</td>
-            <td>a</td>
-            <td>
-              <div class="row">
-                <div
-                  class="col"
-                  onclick="document.getElementById('modal-confirm').style.display='block'"
-                >
-                <i class="fas fa-lock"></i>
-                </div>
-                <div class="col"><i class="far fa-eye"></i></div>
-                <div
-                  class="col"
-                  onclick="document.getElementById('modal-customer-info').style.display='block'"
-                >
-                <i class="far fa-edit"></i>
-                </div>
-              </div>
-            </td>
-          </tr>
-        </tbody>
-      </table>        
-    </div>
-  </div>
-  
-  <div id="modal-info" class="modal fade show">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-info-content">
-        <div class="modal-info-header">
-          <div>
-            <h3>Thêm mới khách hàng</h3>
-          </div>
-          <button
-            _ngcontent-c6=""
-            aria-label="Close"
-            class="close"
-            data-dismiss="modal"
-            type="button"
-            onclick="document.getElementById('modal-info').style.display='none'"
-          >
-            <span _ngcontent-c6="" aria-hidden="true">×</span>
-          </button>
-        </div>
-        <!-- /.card-header -->
-        <div class="modal-info-body">
-          <form>
-            <div class="row">
-              <div class="col">
-                <div class="form-group">
-                  <label>Tên khách hàng</label>
-                  <input type="text" class="form-control" />
-                </div>
-  
-                <div class="form-group">
-                  <label>Giới tính</label>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="flexRadioDefault"
-                      id="flexRadioDefault1"
-                    />
-                    <label class="form-check-label" for="flexRadioDefault1">
-                      Nam
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="flexRadioDefault"
-                      id="flexRadioDefault2"
-                      checked
-                    />
-                    <label class="form-check-label" for="flexRadioDefault2">
-                      Nữ
-                    </label>
-                  </div>
-                </div>
-  
-                <div class="form-group">
-                  <label>Ngày cấp CMND/CCCD</label>
-                  <div class="input-group">
-                    <input
-                      type="date"
-                      name="issue_date"
-                      placeholder="dd/mm/yyyy"
-                    />
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label>Ngân hàng</label>
-                  <select class="form-control select2bs4" style="width: 100%">
-                    <option selected="selected">VPBank</option>
-                    <option>MBBank</option>
-                  </select>
-                </div>
-                <!-- /.form-group -->
-              </div>
-              <div class="col">
-                <div class="form-group">
-                  <label>Quốc tịch</label>
-                  <select class="form-control select2bs4" style="width: 100%">
-                    <option selected="selected">Việt Nam</option>
-                    <option>Another country</option>
-                  </select>
-                </div>
-  
-                <div class="form-group">
-                  <label>Email</label>
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="exampleInputEmail1"
-                    aria-describedby="emailHelp"
-                    placeholder="Enter email"
-                  />
-                </div>
-  
-                <div class="form-group">
-                  <label>Nơi cấp CMND/CCD</label>
-                  <select class="form-control select2bs4" style="width: 100%">
-                    <option selected="selected">Hà Nội</option>
-                    <option>...</option>
-                  </select>
-                </div>
-  
-                <div class="form-group">
-                  <label>Chi nhánh Ngân hàng</label>
-                  <select class="form-control select2bs4" style="width: 100%">
-                    <option selected="selected">Hà Nội</option>
-                    <option>...</option>
-                  </select>
-                </div>
-                <!-- /.form-group -->
-              </div>
-              <div class="col">
-                <div class="form-group">
-                  <label>Ngày sinh</label>
-                  <div class="input-group">
-                    <input
-                      type="date"
-                      name="issue_date"
-                      placeholder="dd/mm/yyyy"
-                    />
-                  </div>
-                </div>
-  
-                <div class="form-group">
-                  <label>Địa chỉ</label>
-                  <input type="text" class="form-control" />
-                </div>
-  
-                <div class="form-group">
-                  <label>Số tài khoản ngân hàng</label>
-                  <input type="text" class="form-control" />
-                </div>
-              </div>
-              <div class="col">
-                <div class="form-group">
-                  <label>Số điện thoại</label>
-                  <input type="text" class="form-control" />
-                </div>
-  
-                <div class="form-group">
-                  <label>Số CMND/CCCD</label>
-                  <input type="text" class="form-control" />
-                </div>
-  
-                <div class="form-group">
-                  <label>Tên chủ tài khoản</label>
-                  <input type="text" class="form-control" />
-                </div>
-  
-                <button type="submit" class="btn btn-default float-end">
-                  Submit
-                </button>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-  
+      
+      <table mat-table [dataSource]="dataSource" class="mat-elevation-z8" class='mat-body-1'>
 
+        <ng-container matColumnDef="number" class="colorized">
+          <th mat-header-cell *matHeaderCellDef> STT </th>
+          <td mat-cell *matCellDef="let element"> {{element.number}} </td>
+        </ng-container>
+      
+        <ng-container matColumnDef="name">
+          <th mat-header-cell *matHeaderCellDef> Họ và tên </th>
+          <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+        </ng-container>
+      
+        <ng-container matColumnDef="idcard">
+          <th mat-header-cell *matHeaderCellDef> CMND/CCCD </th>
+          <td mat-cell *matCellDef="let element"> {{element.idcard}} </td>
+        </ng-container>
+      
+        <ng-container matColumnDef="email">
+          <th mat-header-cell *matHeaderCellDef> Email </th>
+          <td mat-cell *matCellDef="let element"> {{element.email}} </td>
+        </ng-container>
   
-  <div id="modal-customer-info" class="modal fade show">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-customer-content">
-        <div class="modal-customer-header">
-          <div>
-            <h3>Cập nhật khách hàng</h3>
-          </div>
-          <button
-            _ngcontent-c6=""
-            aria-label="Close"
-            class="close"
-            data-dismiss="modal"
-            type="button"
-            onclick="document.getElementById('modal-customer-info').style.display='none'"
-          >
-            <span _ngcontent-c6="" aria-hidden="true">×</span>
-          </button>
-        </div>
-        <!-- /.card-header -->
-        <div class="modal-customer-body">
-          <form>
-            <div class="row">
-              <div class="col">
-                <div class="form-group">
-                  <label>Tên khách hàng</label>
-                  <input type="text" class="form-control" />
-                </div>
-                <!-- /.form-group -->
-                <div class="form-group">
-                  <label>Giới tính</label>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="flexRadioDefault"
-                      id="flexRadioDefault1"
-                    />
-                    <label class="form-check-label" for="flexRadioDefault1">
-                      Nam
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="flexRadioDefault"
-                      id="flexRadioDefault2"
-                      checked
-                    />
-                    <label class="form-check-label" for="flexRadioDefault2">
-                      Nữ
-                    </label>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label>Ngày cấp CMND/CCCD</label>
-                  <div class="input-group">
-                    <input
-                      type="date"
-                      name="issue_date"
-                      placeholder="dd/mm/yyyy"
-                    />
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label>Ngân hàng</label>
-                  <select class="form-control select2bs4" style="width: 100%">
-                    <option selected="selected">VPBank</option>
-                    <option>MBBank</option>
-                  </select>
-                </div>
-                <!-- /.form-group -->
+        <ng-container matColumnDef="mobilenumber">
+          <th mat-header-cell *matHeaderCellDef> Số điện thoại </th>
+          <td mat-cell *matCellDef="let element"> {{element.mobilenumber}} </td>
+        </ng-container>
+  
+        <ng-container matColumnDef="username">
+          <th mat-header-cell *matHeaderCellDef> Username </th>
+          <td mat-cell *matCellDef="let element"> {{element.username}} </td>
+        </ng-container>
+  
+        <ng-container matColumnDef="status">
+          <th mat-header-cell *matHeaderCellDef> Trạng thái </th>
+          <td mat-cell *matCellDef="let element"> 
+            <div class='row' *ngIf='element.status==0'>
+              <div class='col' style='text-align: right;'>
+                  <mat-icon svgIcon="radio_deactive"></mat-icon>
               </div>
-              <div class="col">
-                <div class="form-group">
-                  <label>Quốc tịch</label>
-                  <select class="form-control select2bs4" style="width: 100%">
-                    <option selected="selected">Việt Nam</option>
-                    <option>Another country</option>
-                  </select>
-                </div>
+              <div class='col' style='text-align: left;'>Không hoạt động</div>
+            </div>    
+
+            <div class='row' *ngIf='element.status==1'>
+              <div class='col' style='text-align: right;'>
+                <mat-icon svgIcon="radio_active"></mat-icon>
+              </div>  
+                <div class='col' style='text-align: left;'>Hoạt động</div>
+            </div>              
+          </td>
+        </ng-container>
   
-                <div class="form-group">
-                  <label>Email</label>
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="exampleInputEmail1"
-                    aria-describedby="emailHelp"
-                    placeholder="Enter email"
-                  />
-                </div>
-  
-                <div class="form-group">
-                  <label>Nơi cấp CMND/CCD</label>
-                  <select class="form-control select2bs4" style="width: 100%">
-                    <option selected="selected">Hà Nội</option>
-                    <option>...</option>
-                  </select>
-                </div>
-  
-                <div class="form-group">
-                  <label>Chi nhánh Ngân hàng</label>
-                  <select class="form-control select2bs4" style="width: 100%">
-                    <option selected="selected">Hà Nội</option>
-                    <option>...</option>
-                  </select>
-                </div>
-                <!-- /.form-group -->
-              </div>
-              <div class="col">
-                <div class="form-group">
-                  <label>Ngày sinh</label>
-                  <div class="input-group">
-                    <input
-                      type="date"
-                      name="issue_date"
-                      placeholder="dd/mm/yyyy"
-                    />
-                  </div>
-                </div>
-  
-                <div class="form-group">
-                  <label>Địa chỉ</label>
-                  <input type="text" class="form-control" />
-                </div>
-  
-                <div class="form-group">
-                  <label>Số tài khoản ngân hàng</label>
-                  <input type="text" class="form-control" />
-                </div>
-  
-                <div class="form-group">
-                  <label>Trạng thái</label>
-                  <select class="form-control select2bs4" style="width: 100%">
-                    <option selected="selected">Đang hoạt động</option>
-                    <option>Không hoạt động</option>
-                  </select>
-                </div>
-              </div>
-              <div class="col">
-                <div class="form-group">
-                  <label>Số điện thoại</label>
-                  <input type="text" class="form-control" />
-                </div>
-  
-                <div class="form-group">
-                  <label>Số CMND/CCCD</label>
-                  <input type="text" class="form-control" />
-                </div>
-  
-                <div class="form-group">
-                  <label>Tên chủ tài khoản</label>
-                  <input type="text" class="form-control" />
-                </div>
-  
-                <button type="submit" class="btn btn-default pull-right">
-                  Submit
-                </button>
-              </div>
+        <ng-container matColumnDef="operation">
+          <th mat-header-cell *matHeaderCellDef> Thao tác </th>
+          <td mat-cell *matCellDef="let element"> 
+            <div class="d-inline">
+              <button mat-button (click)="openConfirmationDialog()">
+                <mat-icon *ngIf='element.status==1'>lock_open</mat-icon>
+                <mat-icon *ngIf='element.status==0'>lock</mat-icon>
+              </button>
             </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-  
+            <div class="d-inline">
+              <button mat-button (click)="openInformationDialog()">
+                <mat-icon>visibility</mat-icon>
+              </button>
+            </div>
+            <div class="d-inline">
+              <button mat-button (click)="openEdittingDialog()">
+                <mat-icon svgIcon="note_pencil"></mat-icon>
+              </button>
+            </div> 
+          </td>
+        </ng-container>
+      
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row [ngClass]="{'colorized': row.number%2==1}" *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>     
+      
+  </div> 

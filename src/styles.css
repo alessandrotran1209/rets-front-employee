@@ -1,6 +1,15 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
-::ng-deep .green-snackbar {
-    width: calc(100% / 4.788);
-    background: #1BCBA1;
-  }
+snack-bar-container .green-snackbar {
+  width: calc(100% / 4.788);
+  background: #1BCBA1;
+}
+
+.red-snackbar {
+  width: calc(100% / 4.788);
+  background: #1BCBA1;
+}
+
+mat-dialog-container { 
+  padding: 0
+}

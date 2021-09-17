@@ -1,0 +1,117 @@
+<div mat-dialog-title>
+    <div class='row'>
+      <div class='col'><p class='mat-body-2' style="font-weight: bold;">Thêm mới khách hàng</p></div>
+      <div class='col'><button mat-mini-fab [mat-dialog-close]="true" class='float-end'>x</button></div>
+    </div>
+</div>
+
+<mat-divider style="padding-bottom: 25px;"></mat-divider>
+
+<mat-dialog-content>
+    <form>
+        <div class="row mat-body-1">
+            <div class="col">
+                <div>Tên khách hàng</div>
+                <mat-form-field appearance="outline" class="example-full-width" >
+                    <input matInput [value]="data.name">
+                </mat-form-field>
+            </div>            
+            <div class="col">
+                <div>Quốc tịch</div>
+                <mat-form-field appearance="outline" class="example-full-width" >
+                    <input matInput [value]="data.name">
+                    <mat-icon matSuffix>expand_more</mat-icon>
+                </mat-form-field>
+            </div>
+            <div class="col">
+                <div>Ngày sinh</div>
+                <mat-form-field appearance="outline" class="example-full-width" >
+                    <input matInput [value]="data.name">
+                    <mat-icon matSuffix>expand_more</mat-icon>
+                </mat-form-field>
+            </div>
+            <div class="col">
+                <div>Số điện thoại</div>
+                <mat-form-field appearance="outline" class="example-full-width" >
+                    <input matInput [value]="data.name">                
+                </mat-form-field>
+            </div>
+
+            <div class="w-100"></div>
+
+            <div class="col">
+                <div>Giới tính</div>
+                <mat-radio-group aria-label="Select an option">
+                    <mat-radio-button value="1">Nam</mat-radio-button>
+                    <mat-radio-button value="2">Nữ</mat-radio-button>
+                </mat-radio-group>                  
+            </div>
+            <div class="col">
+                <div>Email</div>
+                <mat-form-field appearance="outline" class="example-full-width" >
+                    <input matInput [value]="data.name">
+                </mat-form-field>
+            </div>
+            <div class="col">
+                <div>Địa chỉ</div>
+                <mat-form-field appearance="outline" class="example-full-width" >
+                    <input matInput [value]="data.name">
+                </mat-form-field>
+            </div>
+            <div class="col">
+                <div>Số CMND/CCCD</div>
+                <mat-form-field appearance="outline" class="example-full-width" >
+                    <input matInput [value]="data.name">
+                </mat-form-field>
+            </div>
+
+            <div class="w-100"></div>
+
+            <div class="col">
+                <div>Ngày cấp CMND/CCCD</div>
+                <mat-form-field appearance="outline" class="example-full-width" >
+                    <input matInput [value]="data.name">
+                </mat-form-field>
+            </div>
+            <div class="col">
+                <div>Nơi cấp CMND/CCCD</div>
+                <mat-form-field appearance="outline" class="example-full-width" >
+                    <input matInput [value]="data.name">
+                </mat-form-field>
+            </div>
+            <div class="col">
+                <div>Số tài khoản ngân hàng</div>
+                <mat-form-field appearance="outline" class="example-full-width" >
+                    <input matInput [value]="data.name">
+                </mat-form-field>
+            </div>
+            <div class="col">
+                <div>Tên chủ tài khoản ngân hàng</div>
+                <mat-form-field appearance="outline" class="example-full-width" >
+                    <input matInput [value]="data.name">
+                </mat-form-field>
+            </div>
+
+            <div class="w-100"></div>
+
+            <div class="col" style='padding-bottom:0'>
+                <div>Ngân hàng</div>
+                <mat-form-field appearance="outline" class="example-full-width" >
+                    <input matInput [value]="data.name">
+                </mat-form-field>
+            </div>
+            <div class="col" style='padding-bottom:0'>
+                <div>Chi nhánh ngân hàng</div>
+                <mat-form-field appearance="outline" class="example-full-width" >
+                    <input matInput [value]="data.name">
+                    <mat-icon matSuffix>expand_more</mat-icon>
+                </mat-form-field>
+            </div>
+            <div class="col" style='padding-bottom:0'>                
+            </div>
+            <div class="col" style='padding-bottom:0'>
+                <button mat-flat-button mat-dialog-close (click)='submit()' class="mat-button">Thêm mới</button>
+            </div>
+        </div>
+    </form>
+</mat-dialog-content>

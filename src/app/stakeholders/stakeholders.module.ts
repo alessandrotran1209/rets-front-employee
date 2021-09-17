@@ -9,12 +9,19 @@ import { CustomerComponent } from './customer/customer.component';
 import { DialogConfirmation } from './customer/customer.component';
 import { DialogInformation } from './customer/customer.component';
 import { SnackbarSuccess } from './customer/customer.component';
+import { SnackbarFailure } from './customer/customer.component';
+import {DialogEdit} from './customer/customer.component';
+import {DialogAddition} from './customer/customer.component';
 
 @NgModule({
   declarations: [
     CustomerComponent,
     DialogConfirmation,
-    DialogInformation
+    DialogInformation,
+    SnackbarSuccess,
+    SnackbarFailure,
+    DialogEdit,
+    DialogAddition
   ],
   imports: [
     CommonModule,

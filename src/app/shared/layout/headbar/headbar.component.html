@@ -1,16 +1,16 @@
 <nav class="main-header navbar navbar-expand navbar-white navbar-light">
   <div class="row" style="width:100%">
     <div class="col" onclick="sidebarToggle()">
-      <span class="material-icons">
-        menu
-        </span>
+      <button mat-button>
+        <mat-icon>menu</mat-icon>
+      </button>
     </div>
     <div id="user-account" class="col">
-      <div class="float-end">
-        <div class=d-inline>Admin</div>
-        <div class="d-inline"><span class="material-icons md-light">
-          account_circle
-          </span></div>
+      <div class="float-end">        
+          <div class='d-inline'>Admin</div>
+        <button mat-button>
+          <mat-icon style='padding-left: 15px'>account_circle</mat-icon>
+        </button>
       </div>
     </div>
   </div>
