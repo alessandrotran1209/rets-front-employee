@@ -1,11 +1,26 @@
-<div class=wrapper>
-  <div class="main" style='color: #000000'>
-    <div id="left">
+  <mat-drawer-container class="container" autosize>
+    <mat-drawer #drawer class="sidenav" mode="side">
       <app-sidebar></app-sidebar>
-    </div>
-    <div id="right">
-      <app-headbar></app-headbar>
+    </mat-drawer>
+    
+    <div class="sidenav-content">
+      <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+        <div class="row" style="width:100%">
+          <div class="col" onclick="sidebarToggle()">
+            <button mat-button (click)="drawer.toggle()">
+              <mat-icon>menu</mat-icon>
+            </button>
+          </div>
+          <div id="user-account" class="col">
+            <div class="float-end">        
+                <div class='d-inline'>Admin</div>
+              <button mat-button style='margin-left: 15px'>
+                <mat-icon>account_circle</mat-icon>
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
       <router-outlet></router-outlet>
-    </div>
-  </div>
-</div>
+    </div>  
+  </mat-drawer-container>

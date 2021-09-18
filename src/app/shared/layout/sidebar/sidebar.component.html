@@ -6,13 +6,13 @@
         <img src="assets/img/Logo.png" style="max-width: 100%; max-height: 100%" alt="TMG Logo"/>
       </a>
     </div>
-    <div class="col text-center">
-      <div class="mat-title" style="color: #FCB11F">RETS</div>
+    <div class="col text-center" style="justify-content: center;">
+      <div class="mat-title" style="color: #FCB11F; font-weight: bold;">RETS</div>
     </div>
   </div>
 
-  <div class="sidebar" id="sidebar">
-    <mat-list-item #stakeholder>
+  <!-- <div class="sidebar" id="sidebar"> -->
+    <!-- <mat-list-item #stakeholder>
       <a class="nav-link" routerLink="/stakeholder"
         onclick="document.getElementById('stakeholders').style.display='block'">
         <div class="item-fullbox">
@@ -93,6 +93,32 @@
         <i class="fas fa-cog fa-lg d-inline"></i>
         <p class="d-inline">Người dùng hệ thống</p>
       </a>
-    </mat-list-item>
-  </div>
+    </mat-list-item> -->
+  
+    
+  <!-- </div> -->
+  <mat-tree [dataSource]="dataSource" [treeControl]="treeControl" class="example-tree">
+  <!-- This is the tree node template for leaf nodes -->
+  <!-- There is inline padding applied to this node using styles.
+    This padding value depends on the mat-icon-button width. -->
+    <mat-tree-node *matTreeNodeDef="let node" matTrNodeToggle>
+        <mat-icon [svgIcon]="node.icon"></mat-icon> {{node.name}}
+    </mat-tree-node>
+    <!-- This is the tree node template for expandable nodes -->
+    <mat-nested-tree-node *matTreeNodeDef="let node; when: hasChild">
+      <div class="mat-tree-node">
+        <button mat-icon-button matTreeNodeToggle
+                [attr.aria-label]="'Toggle ' + node.name">
+                <mat-icon [svgIcon]="node.icon"></mat-icon>
+        </button>
+        {{node.name}}
+      </div>
+      <!-- There is inline padding applied to this div using styles.
+          This padding value depends on the mat-icon-button width.  -->
+      <div [class.example-tree-invisible]="!treeControl.isExpanded(node)"
+          role="group">
+        <ng-container matTreeNodeOutlet></ng-container>
+      </div>
+    </mat-nested-tree-node>
+  </mat-tree>
 </div>

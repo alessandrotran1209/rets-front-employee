@@ -12,3 +12,8 @@ mat-icon {
     margin: 0;
     height: 100%;
 }
+
+.mat-dialog-actions button { 
+    width: 60%;
+    height: 100%;
+}

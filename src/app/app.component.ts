@@ -6,6 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'rets-front-employee';
-  showFiller = false;
+  title = 'rets-front-employee';  
 }

@@ -6,7 +6,7 @@ import { CommonModule } from '@angular/common';
 import { AppComponent } from './app.component';
 
 import { SidebarComponent } from './shared/layout/sidebar/sidebar.component';
-import { HeadbarComponent } from './shared/layout/headbar/headbar.component';
+// import { HeadbarComponent } from './shared/layout/headbar/headbar.component';
 
 import { MaterialModule } from './shared/material/material.module';
 import { MatIconModule } from '@angular/material/icon';
@@ -19,7 +19,7 @@ import { StakeholdersModule } from './stakeholders/stakeholders.module';
   declarations: [
     AppComponent,
     SidebarComponent,
-    HeadbarComponent,
+    // HeadbarComponent,
     ProductComponent
   ],
   imports: [

@@ -17,15 +17,21 @@
 }
 #search button{
   margin-top: 30px;
-  width: 54%;
-  height: 38%;
-  padding: 0;
+  width: 45%;
+  height: 45%;
   font-weight: bold;
 }
 
 .table-data-header {
   padding-top: 15px;
   padding-bottom: 10px;
+}
+
+.table-data-header button {
+  background-image: linear-gradient(to right, #fcb11f, #ffdc16); 
+  font-weight: bold;
+  height: 46px;
+  width: 116.75px;
 }
 
 table {
@@ -42,8 +48,13 @@ td.mat-cell {
   border-bottom-style: none;
 }
 
-td mat-icon {
-  padding-right: 10px;
+td mat-icon {  
+  width: 24px;
+  height: 24px;
+}
+
+td button {
+  margin-right: 10px;
 }
 
 .colorized {

@@ -17,5 +17,7 @@ mat-radio-button {
 mat-dialog-content .col button { 
     background-image: linear-gradient(to right, #fcb11f, #ffdc16);
     width: 75%;
-    margin-top: 30px;
+    height: 50%;
+    margin-top: 28px;
 }
+

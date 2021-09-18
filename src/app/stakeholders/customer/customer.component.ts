@@ -59,6 +59,21 @@ export class CustomerComponent implements OnInit {
       `radio_deactive`,
       this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/icons/radio_deactive.svg")
     );
+
+    this.matIconRegistry.addSvgIcon(
+      `lock`,
+      this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/icons/lock.svg")
+    );
+
+    this.matIconRegistry.addSvgIcon(
+      `lock_open`,
+      this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/icons/lock_open.svg")
+    );
+
+    this.matIconRegistry.addSvgIcon(
+      `eye`,
+      this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/icons/eye.svg")
+    );
   }
 
   ngOnInit(): void {
@@ -66,7 +81,8 @@ export class CustomerComponent implements OnInit {
 
   openConfirmationDialog() {    
     this.dialog.open(DialogConfirmation, {
-      width: String(window.innerHeight/2.324)
+      width: String(window.innerHeight/2.324),
+      data: this.customer.status
     });
   }
 
@@ -150,6 +166,7 @@ export class DialogConfirmation {
     private domSanitizer: DomSanitizer,
     private dialogRef: MatDialogRef<DialogConfirmation>,
     private snackbar: MatSnackBar,
+    @Inject(MAT_DIALOG_DATA) public data: number
     ) {
       this.matIconRegistry.addSvgIcon(
         `warning_circle`,

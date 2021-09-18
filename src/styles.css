@@ -1,15 +1,19 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
-snack-bar-container .green-snackbar {
+.green-snackbar {
   width: calc(100% / 4.788);
-  background: #1BCBA1;
+  background: #1BCBA1 !important;
 }
 
 .red-snackbar {
   width: calc(100% / 4.788);
-  background: #1BCBA1;
+  background: #C91828 !important;
 }
 
 mat-dialog-container { 
   padding: 0
+}
+
+.mat-radio-checked .mat-radio-inner-circle {
+  background-color: blue;
 }

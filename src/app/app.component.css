@@ -1,19 +1,19 @@
 .wrapper {
   display: block;
+  width: 100%;
 }
 
-.main {
-  display: flex
+.container {
+  max-width: 1920px;
+  height: 100%;
+  margin: 0;
 }
 
-#right {
-  padding-left: 5%;
-  padding-right: 5%;
-  width: 87%;
+.sidenav-content {
+  height: 100%;
+  padding: 10px 50px 10px 50px;
 }
 
-#left {
-  display: block;
-  padding-left: 10px;
-  width: 13%;
+.sidenav {
+  padding: 20px;
 }
